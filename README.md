@@ -1,5 +1,5 @@
 # Stacking 
-## this is a stacking classifier with built-in parameter-tuning and feature selection featues 
+## this is a stacking classifier with built-in parameter-tuning and feature selection features 
 1. this classifier is built based on the stacking of several popular boosting methods (also support not boosting methods):
         included base learner "child_learner": [adaboost, gbm, xgb, lgb, catboost,svc,lr,rf,et,mlp]
 2. the outputs (predictions of probabilities) of these base learner are input features of one parent learner:
