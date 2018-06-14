@@ -27,8 +27,10 @@
         *  parent_optimizer = None|"default"|{"params":params, "tp_manner":"gs","tf_manner":"wrapping"}
         *  None: do not perform parameter tuning
         *  "default": perform parameter tuning for every base learner specified in child_learner,
-        *  [{"estimator": AdaBoostClassifier(), "params":params, "tp_manner":"gs"},...]:
-                    *  a list of dict (a dict for parent_optimizer) contains
+        *  [{"estimator": AdaBoostClassifier(), "params":params, "tp_manner":"gs"},...]:  
+        
+                    a list of dict (a dict for parent_optimizer) contains  
+                    
                     *  "estimator": estimator names, include adaboost, gbm, xgb, lgb, catboost,rf,svc,lr
                     *  "params": parameter search space, a dict, with parameter names as keys and search spaces as values
                     *  "tp_manner": search manners, include gs, bayes, hpopt, random
